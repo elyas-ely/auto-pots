@@ -16,6 +16,7 @@ app.use(express.static('public'))
 router.get('/', async (req, res) => {
   res.send('<h1>Hello, world!</h1>')
   await sendBulkPosts(1)
+  // 000
 })
 
 app.use('/', router)
