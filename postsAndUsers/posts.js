@@ -8,16 +8,16 @@ const api = 'https://backend.drukhshan.com/posts/'
 
 // Lists for random car details
 const carNames = [
-  'Corolla',
-  'Honda',
-  'BMW',
-  'Toyota',
-  'Audi',
-  'Mercedes',
-  'Ford',
-  'Chevy',
-  'Nissan',
-  'Hyundai',
+  'کرولا',
+  'مارک اکس',
+  'ویټز',
+  'پاسو',
+  'فلډر',
+  'مکو',
+  'کراون',
+  'لکسیس',
+  'اقوا',
+  'فورنر',
 ]
 
 const carSuffixes = [
