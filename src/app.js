@@ -1,5 +1,5 @@
 import express from 'express'
-import fetch from 'node-fetch'
+
 import { logger } from './utils/logger.js'
 import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
