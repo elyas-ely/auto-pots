@@ -1,4 +1,4 @@
-name: Ping auto-pots every 5 minutes
+name: Ping auto-posts every 5 minutes
 
 on:
   schedule:
@@ -9,6 +9,6 @@ jobs:
   call-endpoint:
     runs-on: ubuntu-latest
     steps:
-      - name: Call auto-pots.vercel.app
+      - name: Call auto-posts-tau.vercel.app
         run: |
           curl -s https://auto-posts-tau.vercel.app/
