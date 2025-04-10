@@ -9,6 +9,7 @@ const router = express.Router()
 router.get('/', async (req, res) => {
   try {
     await sendBulkPosts(1)
+    res.status(200).json({ message: 'success' })
   } catch (error) {
     console.log(error)
   }
