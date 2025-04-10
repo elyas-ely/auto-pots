@@ -2,8 +2,8 @@ name: Ping auto-pots every minute
 
 on:
   schedule:
-    - cron: "* * * * *"  # every minute
-  workflow_dispatch:      # allows manual trigger too
+    - cron: '* * * * *' # every minute
+  workflow_dispatch: # allows manual trigger too
 
 jobs:
   call-endpoint:
@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Call auto-pots.vercel.app
         run: |
-          curl -s https://auto-pots.vercel.app/
+          curl -s https://auto-posts-tau.vercel.app/
