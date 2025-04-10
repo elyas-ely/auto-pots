@@ -1,8 +1,8 @@
-name: Ping auto-pots every minute
+name: Ping auto-pots every 5 minutes
 
 on:
   schedule:
-    - cron: '* * * * *' # every minute
+    - cron: '*/5 * * * *' # every 5 minutes
   workflow_dispatch: # allows manual trigger too
 
 jobs:
