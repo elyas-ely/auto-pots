@@ -7,7 +7,7 @@ const router = express.Router()
 // ============== GET ROUTES =============
 // =======================================
 router.get('/', async (req, res) => {
-  sendBulkPosts(1)
+  await sendBulkPosts(1)
   res.send('1 post created')
 })
 
