@@ -20,6 +20,8 @@ const carNames = [
   'فورنر',
 ]
 
+const newNames = ['نوي', 'ښایسته', 'ثابت']
+
 const carSuffixes = [
   'Super',
   'Sport',
@@ -163,8 +165,7 @@ const getRandomItem = (array) => array[Math.floor(Math.random() * array.length)]
 const generateRandomPost = () => {
   return {
     // car_name: `${getRandomItem(carNames)} ${getRandomItem(carSuffixes)} ${getRandomItem(ultra)}`,
-    car_name: `${getRandomItem(carNames)} ${getRandomItem(ultra)}`,
-
+    car_name: `${getRandomItem(carNames)} ${getRandomItem(newNames)}`,
     model: getRandomItem(carYears),
     conditions: getRandomItem(conditions),
     fuel_type: getRandomItem(fuelTypes),
