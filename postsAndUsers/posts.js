@@ -163,7 +163,7 @@ const getRandomItem = (array) => array[Math.floor(Math.random() * array.length)]
 const generateRandomPost = () => {
   return {
     // car_name: `${getRandomItem(carNames)} ${getRandomItem(carSuffixes)} ${getRandomItem(ultra)}`,
-    car_name: `${getRandomItem(carNames)}`,
+    car_name: `${getRandomItem(carNames)} ${getRandomItem(ultra)}`,
 
     model: getRandomItem(carYears),
     conditions: getRandomItem(conditions),
