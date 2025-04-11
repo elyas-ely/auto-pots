@@ -32,6 +32,18 @@ const carSuffixes = [
   'Pro',
   'Elite',
 ]
+const ultra = [
+  'Ultra',
+  'Max',
+  'SUV',
+  'Hatchback',
+  'Crossover',
+  'Coupe',
+  'Pickup',
+  'Minivan',
+  'Convertible',
+  'Roadster',
+]
 const side = ['راسته', 'چپه']
 const carYears = [
   '2025',
@@ -150,7 +162,7 @@ const getRandomItem = (array) => array[Math.floor(Math.random() * array.length)]
 // Function to generate a random post
 const generateRandomPost = () => {
   return {
-    car_name: `${getRandomItem(carNames)} ${getRandomItem(carSuffixes)}`,
+    car_name: `${getRandomItem(carNames)} ${getRandomItem(carSuffixes)} ${getRandomItem(ultra)}`,
     model: getRandomItem(carYears),
     conditions: getRandomItem(conditions),
     fuel_type: getRandomItem(fuelTypes),
