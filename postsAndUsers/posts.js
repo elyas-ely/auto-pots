@@ -162,7 +162,9 @@ const getRandomItem = (array) => array[Math.floor(Math.random() * array.length)]
 // Function to generate a random post
 const generateRandomPost = () => {
   return {
-    car_name: `${getRandomItem(carNames)} ${getRandomItem(carSuffixes)} ${getRandomItem(ultra)}`,
+    // car_name: `${getRandomItem(carNames)} ${getRandomItem(carSuffixes)} ${getRandomItem(ultra)}`,
+    car_name: `${getRandomItem(carNames)}`,
+
     model: getRandomItem(carYears),
     conditions: getRandomItem(conditions),
     fuel_type: getRandomItem(fuelTypes),
